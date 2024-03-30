@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style type="text/css">
+    .scrollspy-example {
+        position: relative;
+        height: 350px;
+        overflow: auto;
+    }
+    .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    .card {
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+  }
+
+    </style>
+
+  </head>
+
+
+  <!--scrollspy-->
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#山水间">山水间</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#刹那间">刹那间</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#人里间">人里间</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <div id="山水云间" class="container-fluid bg-success text-white" style="padding:100px 20px;background-image:url(shanshui.png);">
+        <h1>山水间</h1>
+      </div>
+      <div id="刹那间" class="container-fluid bg-black text-white" style="padding:80px 20px;background-image:url(chana.png);">
+        <h1>刹那间</h1>
+      </div>
+      <div id="人里间" class="container-fluid bg-secondary text-white" style="padding:80px 20px; background-image:url(renli.png);">
+        <h1>人里间</h1>
+        <p></p>
+      </div>
+
+
+      <!--Accordion-->
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        山水间#1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>天昏地暗·幽冥独往 青山不遮·流水无悔</strong>
+        <p> </p>
+        <p>野旷天低树，江清月近人——宿建德江</p>
+        <p>倚仗柴门外，临风听暮蝉——辋川闲居</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        刹那间#2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>一弹指间·六十刹那 一刹那时·九百生灭</strong>
+        <p> </p>
+        <p>手把青秧插满田，低头便是水中天——欧阳修</p>
+        <p>年光似鸟翩翩过，世事如棋局局新——仁王经</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        人里间#3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>人生一世·草生一春 来如风雨·去如微尘</strong>
+        <p> </p>
+        <p>逢人不说人间事，便是人间无事人——赠质上人</p>
+        <p>千江有水千江月，万里无云万里天——雷庵正受</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <h1> </h1>
+
+<!--card-->
+<!--1-->
+<div class="card-container">
+  <div class="card" style="width: 18rem;">
+    <img src="sunset.jpeg" class="card-img-top" alt="sunset">
+    <div class="card-body">
+      <strong class="card-title">#1 申时阳</strong>
+      <sup>2024.2.11</sup>
+    </div>
+  </div>
+<!--2-->
+  <div class="card" style="width: 18rem;">
+    <img src="wind.jpeg" class="card-img-top" alt="wind">
+    <div class="card-body">
+      <strong class="card-title">#1 松风柏</strong>
+      <sup>2024.2.9</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="nanyue.jpeg" class="card-img-top" alt="nanyue">
+    <div class="card-body">
+      <strong class="card-title">#1 衡南岳</strong>
+      <sup>2024.2.13</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="lan.jpeg" class="card-img-top" alt="lan">
+    <div class="card-body">
+      <strong class="card-title">#1 山晌谷</strong>
+      <sup>2022.8.14</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="dark.jpeg" class="card-img-top" alt="dark">
+    <div class="card-body">
+      <strong class="card-title">#2 亲爱的小孩</strong>
+      <sup>2023.5.25</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="jingjie.jpeg" class="card-img-top" alt="jingjie">
+    <div class="card-body">
+      <strong class="card-title">#2 雾晨</strong>
+      <sup>2018.3.16</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="fengye.jpeg" class="card-img-top" alt="fengye">
+    <div class="card-body">
+      <strong class="card-title">#2 离界点</strong>
+      <sup>2018.11.25</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="lou.jpeg" class="card-img-top" alt="lou">
+    <div class="card-body">
+      <strong class="card-title">#2 建筑</strong>
+      <sup>2018.10.29</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="hongsu.jpeg" class="card-img-top" alt="hongsu">
+    <div class="card-body">
+      <strong class="card-title">#3 夕苞粟</strong>
+      <sup>2022.2.16</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="dou.jpeg" class="card-img-top" alt="dou">
+    <div class="card-body">
+      <strong class="card-title">#3 Walking</strong>
+      <sup>2022.11.20</sup>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="people.jpeg" class="card-img-top" alt="people">
+    <div class="card-body">
+      <strong class="card-title">#3 Walking2</strong>
+      <sup>2023.10.6</sup>
+    </div>
+  </div>
+
+<!--3-->
+  <div class="card" style="width: 18rem;">
+    <img src="light.jpeg" class="card-img-top" alt="light">
+    <div class="card-body">
+      <strong class="card-title">#3 舍</strong>
+      <sup>2022.8.14</sup>
+    </div>
+  </div>
+</div>
+
+<h1>  </h1>
+
+
+<!--input-->
+<form>
+  <div class="mb-3 mt-3">
+    <label for="most" class="form-label">您最感兴趣的版块（输入数字即可）：</label>
+    <input type="most" class="form-control" id="most" placeholder="1-山水间 2-刹那间 3-人里间" name="most">
+  </div>
+
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> 记住选择
+    </label>
+  </div>
+</form>
+
+<h1>  </h1>
+
+<h5>您可以对Kie的作品表态：</h5>
+<!--modal-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ 夸赞
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">感谢</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Kie将期待您的作品！
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes^_^</button>
+        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No+_+</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#second">
+ 一般
+</button>
+<!-- Modal -->
+<div class="modal fade" id="second" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">好的</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Kie留下了眼泪！TT
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK+_+</button>
+        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No+_+</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#third">
+ 路过
+</button>
+<!-- Modal -->
+<div class="modal fade" id="third" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">感谢</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Kie与你打了个照面
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Bye-_+</button>
+        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No+_+</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--collaspe
+<p class="d-inline-flex gap-1">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    一般
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Kie留下了眼泪TT
+  </div>
+</div>-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+
+</script>
+
+  <h1>  .</h1>
+
+
+  <a href="#" class="btn btn-primary">返回顶部</a>
+  <address>31/3/2024<sub>
+    by Eureka Kie.</address>
+
+
+  </body>
+</html>
