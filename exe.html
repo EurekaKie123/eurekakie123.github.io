@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>EXE demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style type="text/css">
+    <style>
     .scrollspy-example {
         position: relative;
         height: 350px;
@@ -24,8 +24,73 @@
     background-color: white;
     border: 1px solid lightgray;
   }
+  .container{
+    text-align: left;
+  }
 
-    </style>
+  .question {
+    position: relative;
+  }
+  #calculate-button{
+    position: relative;
+  }
+  #picture{
+    position: absolute;
+    top: 95%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .Pic_Area {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* .Pic_Area img {
+margin: 0;
+padding: 0;
+} */
+
+  p{
+    display:inline;
+    }
+  p:hover{
+      color:blue;
+    }
+  a {
+      text-decoration:none;
+      color:black
+    }
+  .w_button{
+  border:none;
+  background:none;
+  font-size: 20px;
+  }
+  .w_button:hover {
+    color: blue;
+  }
+  .r_button{
+  border:none;
+  background:none;
+  font-size: 20px;
+  }
+  .r_button:hover {
+    color: blue;
+  }
+  #imageB{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+  .bordered {
+    border: 10px solid #C2E6FE;
+  }
+  .col{
+    height:150px;
+  }
+</style>
 
   </head>
 
@@ -119,7 +184,7 @@
       <sup>2024.2.11</sup>
     </div>
   </div>
-<!--2-->
+
   <div class="card" style="width: 18rem;">
     <img src="wind.jpeg" class="card-img-top" alt="wind">
     <div class="card-body">
@@ -143,7 +208,7 @@
       <sup>2022.8.14</sup>
     </div>
   </div>
-
+<!--2-->
   <div class="card" style="width: 18rem;">
     <img src="dark.jpeg" class="card-img-top" alt="dark">
     <div class="card-body">
@@ -175,7 +240,7 @@
       <sup>2018.10.29</sup>
     </div>
   </div>
-
+<!--3-->
   <div class="card" style="width: 18rem;">
     <img src="hongsu.jpeg" class="card-img-top" alt="hongsu">
     <div class="card-body">
@@ -200,7 +265,6 @@
     </div>
   </div>
 
-<!--3-->
   <div class="card" style="width: 18rem;">
     <img src="light.jpeg" class="card-img-top" alt="light">
     <div class="card-body">
@@ -212,9 +276,216 @@
 
 <h1>  </h1>
 
+<!-- trying -->
+<h3 text-center>您可以进行选择小游戏</h3>
+<p>*根据题号后边的短句，参悟，思考，然后选择下一句</p>
+<p>*无论正确与否，选择完毕后会将跳转下一题</p>
+<h1></h1>
+<style>
 
+  .container{
+    text-align: center;;
+  }
+
+  .question {
+    position: relative;
+  }
+  #calculate-button{
+    position: relative;
+  }
+
+  p{
+    display:inline;
+    }
+  p:hover{
+      color:red;
+    }
+  a {
+      text-decoration:none;
+      color:black
+    }
+  .w_button{
+  border:none;
+  background:none;
+  font-size: 20px;
+  }
+  .w_button:hover {
+    color: blue;
+  }
+  .r_button{
+  border:none;
+  background:none;
+  font-size: 20px;
+  }
+  .r_button:hover {
+    color: blue;
+  }
+
+  .bordered {
+    border: 10px solid #C2E6FE;
+  }
+  .col{
+    height:150px;
+  }
+
+</style>
+
+</head>
+<body>
+<div class="container">
+
+
+<div class="question_area">
+
+
+<!-- 01 -->
+<div class="question" id="Q1">
+  <h3 style="font-size:45px;font-weight:bold;">壹 天有烘炉</h3>
+  <div class="button">
+  <a href="#Q2"><button class="r_button" id="dswj" onclick="showQ2();replaceImage();alert('选择正确' )">地生五金</button></a>
+  <a href="#Q2"><button class="w_button" id="yrnd" onclick="showQ2();alert('o.0再琢磨一下')">有容乃大</button></a>
+  <a href="#Q2"><button class="w_button" id="wttd" onclick="showQ2();alert('o.0再琢磨一下')">五体投地</button></a>
+  <a href="#Q2"><button class="w_button" id="ddwb" onclick="showQ2();alert('o.0再琢磨一下！'))">地大物博</button></a>
+</div>
+</div>
+
+<!-- 02 -->
+<div class="question" id="Q2" style="display:none;">
+  <h3 style="font-size:45px;font-weight:bold;">贰 星藏点雪</h3>
+  <div class="button">
+    <a href="#Q3"><button class="w_button" id="chqy" onclick="showQ3();alert('o.0再琢磨一下')">春花秋月</button></a>
+    <a href="#Q3"><button class="r_button" id="yyhm" onclick="showQ3();replaceImage();alert('选择正确！' )">月隐晦明</button></a>
+    <a href="#Q3"><button class="w_button" id="zxgy" onclick="showQ3();alert('o.0再琢磨一下')">众星拱月</button></a>
+    <a href="#Q3"><button class="w_button" id="rxyy" onclick="showQ3();alert('o.0再琢磨一下')">日新月异</button></a>
+
+
+    </div>
+
+  </div>
+
+<!-- 03 -->
+  <div class="question" id="Q3" style="display:none;">
+    <h3 style="font-size:45px;font-weight:bold;">叁 风起弹剑</h3>
+    <div class="button">
+
+      <a href="#Q4"><button class="w_button" id="fswy" onclick="showQ4();alert('o.0再琢磨一下')">翻手为云</button></a>
+      <a href="#Q4"><button class="w_button" id="jhfhy" onclick="showQ4();alert('o.0再琢磨一下')">呼风唤雨</button></a>
+      <a href="#Q4"><button class="w_button" id="qspt" onclick="showQ4();alert('o.0再琢磨一下')">气势滂沱</button></a>
+      <a href="#Q4"><button class="r_button" id="ygyc" onclick="showQ4();replaceImage();alert('选择正确！' )">雨过濯缨</button></a>
+
+    </div>
+  </div>
+
+<!-- 04 -->
+<div class="question" id="Q4" style="display:none;">
+  <h3 style="font-size:45px;font-weight:bold;">肆 云晞万象</h3>
+  <div class="button">
+
+    <a href="#Q5"><button class="w_button" id="ywrj" onclick="showQ5();alert('o.0再琢磨一下')">杳无人迹</button></a>
+    <a href="#Q5"><button class="w_button" id="kkbp" onclick="showQ5();alert('o.0再琢磨一下')">坎坷不平</button></a>
+    <a href="#Q5"><button class="r_button" id="ydgj" onclick="showQ5();replaceImage();alert('选择正确！' )">烟荡孤径</button></a>
+    <a href="#Q5"><button class="w_button" id="myql" onclick="showQ5();alert('o.0再琢磨一下')">绵延千里</button></a>
+
+      </div>
+</div>
+
+
+<!-- 05-->
+<div class="question" id="Q5" style="display:none;">
+  <h3 style="font-size:45px;font-weight:bold;">伍 霞红晚穗</h3>
+  <div class="button">
+
+    <a href="#Q6"><button class="w_button" id="wgfd" onclick="showQ6();alert('o.0再琢磨一下')">五谷丰登</button></a>
+    <a href="#Q6"><button class="r_button" id="lrcj" onclick="showQ6();replaceImage();alert('选择正确！' )">露染尘襟</button></a>
+    <a href="#Q6"><button class="w_button" id="ymzz" onclick="showQ6();alert('o.0再琢磨一下')">揠苗助长</button></a>
+    <a href="#Q6"><button class="w_button" id="chst" onclick="showQ6();alert('o.0再琢磨一下')">沧海桑田</button></a>
+  </div>
+</div>
+
+
+</div>
+
+
+<div class="button">
+<button id="calculate-button" >统计得分</button>
+</div>
+<div class="button">
+  <a href="查看完整诗号.html" target="_blank"><button >查看完整诗号</button></a>
+
+</div>
+</div>
+
+
+
+
+<!-- 计分 -->
+<script type="text/javascript">
+  const r_buttons = document.querySelectorAll('.r_button');
+  let score = 0;
+
+  r_buttons.forEach((r_button) => {
+  r_button.addEventListener('click', () => {
+    score++;
+  });
+});
+
+  const calculate_button = document.getElementById('calculate-button');
+  calculate_button.addEventListener('click', () => {
+alert(`得分为${score}分`);
+});
+</script>
+
+
+<script type="text/javascript">
+  function showQ2() {
+    var Q1 = document.getElementById("Q1");
+    var Q2 = document.getElementById("Q2");
+    Q1.style.display = "none";
+    Q2.style.display = "block";
+  }
+  function showQ3() {
+    var Q2 = document.getElementById("Q2");
+    var Q3 = document.getElementById("Q3");
+    Q2.style.display = "none";
+    Q3.style.display = "block";
+    }
+  function showQ4() {
+    var Q3 = document.getElementById("Q3");
+    var Q4 = document.getElementById("Q4");
+    Q3.style.display = "none";
+    Q4.style.display = "block";
+  }
+  function showQ5() {
+    var Q4 = document.getElementById("Q4");
+    var Q5 = document.getElementById("Q5");
+    Q4.style.display = "none";
+    Q5.style.display = "block";
+  }
+  </script>
+
+<script type="text/javascript">
+
+<script type="text/javascript">
+
+
+const r_buttons = document.querySelectorAll(".r_button");
+const w_buttons = document.querySelectorAll(".w_button");
+
+r_buttons.forEach((button) => {
+button.addEventListener("click", () => {
+  alert("选择正确");
+});
+});
+
+w_buttons.forEach((button) => {
+button.addEventListener("click", () => {
+  alert("o.0再琢磨一下");
+});
+});
+
+</script>
 <!--input-->
-<form>
+<!--<form>
   <div class="mb-3 mt-3">
     <label for="most" class="form-label">您最感兴趣的版块（输入数字即可）：</label>
     <input type="most" class="form-control" id="most" placeholder="1-山水间 2-刹那间 3-人里间" name="most">
@@ -224,7 +495,7 @@
       <input class="form-check-input" type="checkbox" name="remember"> 记住选择
     </label>
   </div>
-</form>
+</form>-->
 
 <h1>  </h1>
 
@@ -297,19 +568,6 @@
     </div>
   </div>
 </div>
-
-<!--collaspe
-<p class="d-inline-flex gap-1">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    一般
-  </a>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Kie留下了眼泪TT
-  </div>
-</div>-->
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script>
